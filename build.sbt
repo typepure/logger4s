@@ -24,7 +24,7 @@ lazy val V = new {
   val macroParadiseVersion = "2.1.1"
   val kindProjectorVersion = "0.9.9"
   val loggingScalaVersion = "3.5.0"
-  val logbackClassicVersion = "1.2.3"
+  val slf4jApiVersion = "1.7.25"
   val json4sVersion = "3.6.4"
   val mockitoVersion = "1.10.19"
   val scalazZIOVersion = "0.6.3"
@@ -78,7 +78,7 @@ lazy val core = crossProject(JVMPlatform)
   .settings(buildSettings)
   .settings(commonDependencies)
   .jvmSettings(libraryDependencies ++= Seq(
-    "ch.qos.logback" % "logback-classic" % V.logbackClassicVersion
+    "org.slf4j" % "slf4j-api" % V.slf4jApiVersion
   ))
 
 lazy val coreJVM = core.jvm

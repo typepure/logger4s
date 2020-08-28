@@ -19,7 +19,6 @@ You can run your computations in any type `F[_]`.
 
 * Java 6 or higher
 * Scala 2.11 or 2.12
-* [Logback](http://logback.qos.ch) backend compatible with [SLF4J](https://www.slf4j.org/)
 
 ## Getting Logger4s ##
 
